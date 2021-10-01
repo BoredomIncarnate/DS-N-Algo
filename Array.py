@@ -17,3 +17,5 @@ print(a.length)
 print(a[2])
 a[2] = 3
 print(a[2])
+print("lol")
+print("blah")
