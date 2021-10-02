@@ -1,7 +1,7 @@
 class Node():
     def __init__(self, value=None, next=None):
-        self._value = value
-        self._next = next
+        self._value: any = value
+        self._next: Node = next
 
     def getvalue(self):
         return self._value
@@ -17,9 +17,4 @@ class Node():
 
     value = property(getvalue, setvalue)
     next = property(getnext, setnext)
-
-head = Node("a")
-next = Node("b")
-head.next = next
-print(head.value)
-print(head.next.value)   
+  
